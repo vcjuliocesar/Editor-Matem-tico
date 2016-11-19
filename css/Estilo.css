@@ -1,0 +1,800 @@
+/*@charset "UTF-8";
+*{
+    font-family:Consolas;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none ;
+    color: #000;
+}
+.link,.link_avz,.link_Int,.link_Bsc:hover{
+    color:#FFFFFF;
+}
+#Sined{
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin: 6px auto;
+    padding: 2px 2px 2px 2px;
+}
+#Uaem{
+    float: right;
+    width:70px;
+    height:auto;
+    margin: -10px auto;
+}
+body {
+    background:#FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+}
+#padre{
+    width: 1200px;
+    min-height:655px;
+    margin: 15px auto;
+    border-radius: 6px 6px 6px 6px;
+    border: solid 1px;
+    background:#FFFFFF;
+    box-shadow: 1px 5px 10px 10px #999;
+}
+.Cabezera{
+    background:#73880A;
+    width: 1000px;
+    height: 50px;
+    border: solid 2px #006E2E;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 5px 10px 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+.Menu{
+    float: left;
+    border: solid 2px #006E2E;
+    border-radius: 5px 5px 5px 5px;
+    background: #F9F7ED;
+    text-align:center;
+    width: 250px;
+    height: 550px;
+    margin: 3px 20px 2px 95px;
+    padding: 10px 10px 0px 10px;
+}
+.item_li{
+    float: left;
+    color: #000;
+    font-size: 19px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px #356AA0;
+    padding: 15px 10px 15px 10px;
+    margin: 20px 1px 5px -20px;
+    background: #FFFFFF;
+    text-align: center;
+    word-wrap: hyphenate;
+    overflow: hidden;
+}
+.item_li:hover{
+    background:#4096EE;
+}
+#Display{
+    border: solid 2px #006E2E;
+    border-radius: 5px 5px 5px 5px;
+    background: #FFFFFF;
+    width: 695px;
+    height: 500px;
+    margin: 2px 2px 0px 380px;
+    padding:20px 5px 40px 15px;
+    text-align: justify;
+    overflow-x: auto;
+}
+#GuiaAlumno,#GuiaProfesor{
+    width: 600px;
+    min-height:200px;
+}
+#contenido1,#contenido2,#contenido3,#contenido4{
+    display: none;
+}
+#teorema1{
+        float:left;
+        font-family:Arial,Helvetica, sans-serif;
+        font-size:15px;
+        margin:5px 2px 4px 0px;
+        border-radius:20px;
+        width:255px;
+        height:auto;
+        text-align:justify;
+        background:#FFDEAD;
+}
+#con_div{
+        font-size:14px;
+    margin: 5px auto;
+    padding: 2px 2px 2px 2px;
+        border-radius:5px 5px 5px 5px;
+        width:700px;
+        height: auto;
+        text-align:justify;
+        background:#F4A460;
+}
+#FormLogin{
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+.InpuTxt{
+    width: 200px;
+    height: 25px;
+    margin: 0px 20px 3px 50px;
+    padding: 2px 2px 2px 2px;
+}
+.btn{
+    border: 1px solid #F9F7ED;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #36393D;
+    background: #EEEEEE;
+    width: 100px;
+    min-height: 30px;
+    margin: 0px 20px 3px 50px;
+}
+.btn:hover{
+    background:#36393D ;
+    color: #FFFFFF;
+}
+.InputText{
+    width: 250px;
+    height: 30px;
+    margin: 2px auto;
+    padding: 2px 2px 2px 2px;
+    text-transform: uppercase;
+    display: block; 
+}
+.Pie{
+  background: #73880A;
+  width: 1000px;
+  height:50px;
+  border: solid 2px #006E2E;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  margin: 10px auto;
+  padding:2px 2px 5px 5px;
+}*/
+/*******Editor********/
+/*.btn{
+    border: 1px solid #F9F7ED;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #36393D;
+    background: #EEEEEE;
+    width: 100px;
+    min-height: 30px;
+    margin: 0px 20px 3px 50px;
+}*/
+.boton{
+    border:solid 1px #F9F7ED;
+    background:#EEEEEE;
+    /*border-radius:10px;*/
+    /*    height:30px;
+        width:40px;*/
+    width:20%;    
+    height:6%;
+    text-align:center;
+    padding-top:3px;
+    padding-right:3px;
+    padding-bottom:3px;
+    padding-left:3px;
+    font-size:20px;
+}
+.boton:hover{
+    cursor:pointer;
+    background:#36393D;
+    color: #FFFFFF;
+}
+#fx{
+    float:left;
+    top: 3px;
+    left:5px;
+}
+
+#frac{
+    float:left;
+    top:3px;
+    left:6px;
+}
+
+#raiz{
+    float:left;
+    top:3px;
+    left:7px;
+}
+
+#expon{
+    float:left;
+    top:3px;
+    left:8px;
+}
+#inte{
+    float:left;
+    top:3px;
+    left:9px;
+}
+#may_iql{
+    float:left;
+    top:5px;
+    left:5px;
+}
+#men_iql{
+    float:left;
+    top:5px;
+    left:6px;
+}
+#men{
+    float:left;
+    top:5px;
+    left:7px;
+}
+#may{
+    float:left;
+    top:5px;
+    left:8px;
+}
+#div{
+    float:left;
+    top:5px;
+    left:9px;
+}
+#mult{
+    float:left;
+    top:7px;
+    left:5px;
+}
+#mas{
+    float:left;
+    top:7px;
+    left:6px;
+}
+#menos{
+    float:left;
+    top:7px;
+    left:7px;
+}
+#igual{
+    float:left;
+    top:7px;
+    left:8px;
+}
+#mas-men{
+    float:left;
+    top:7px;
+    left:9px;
+}
+#infinito{
+    float:left;
+    top:9px;
+    left:5px;
+}
+#ast{
+    float:left;
+    top:9px;
+    left:6px;
+}
+#diag{
+    float:left;
+    top:9px;
+    left:7px;
+}
+#neq{
+    float:left;
+    top:9px;
+    left:8px;
+}
+#prent-izq{
+    float:left;
+    top:9px;
+    left:9px;
+}
+#prent-der{
+    float:left;
+    top:11px;
+    left:5px;
+}
+#uno{
+    float:left;
+    top:11px;
+    left:6px;
+}
+#dos{
+    float:left;
+    top:11px;
+    left:7px;
+}
+#tres{
+    float:left;
+    top:11px;
+    left:8px;
+}
+#cuatro{
+    float:left;
+    top:11px;
+    left:9px;
+}
+#cinco{
+    float:left;
+    top:13px;
+    left:5px;
+}
+#seis{
+    float:left;
+    top:13px;
+    left:6px;
+}
+#siete{
+    float:left;
+    top:13px;
+    left:7px;
+}
+#ocho{
+    float:left;
+    top:13px;
+    left:8px;
+}
+#nueve{
+    float:left;
+    top:13px;
+    left:9px;
+}
+#cero{
+    float:left;
+    top:15px;
+    left:5px;
+}
+#ap{
+    float:left;
+    top:5px;
+    left:5px;
+}
+#bet{
+    float:left;
+    top:5px;
+    left:6px;
+}
+#ga{
+    float:left;
+    top:5px;
+    left:7px;
+}
+#del{
+    float:left;
+    top:5px;
+    left:8px;
+}
+#ep{
+    float:left;
+    top:5px;
+    left:9px;
+}
+#var{
+    float:left;
+    top:5px;
+    left:10px;
+}
+#ze{
+    float:left;
+    top:5px;
+    left:11px;
+}
+#et{
+    float:left;
+    top:5px;
+    left:12px;
+}
+#th{
+    float:left;
+    top:5px;
+    left:13px;
+}
+#vart{
+    float:left;
+    top:13px;
+    left:5px;
+}
+#iot{
+    float:left;
+    top:13px;
+    left:6px;
+}
+#kap{
+    float:left;
+    top:13px;
+    left:7px;
+}
+#lam{
+    float:left;
+    top:13px;
+    left:8px;
+}
+#mu{
+    float:left;
+    top:13px;
+    left:9px;
+}
+#nu{
+    float:left;
+    top:13px;
+    left:10px;
+}
+#xi{
+    float:left;
+    top:13px;
+    left:11px;
+}
+#o{
+    float:left;
+    top:13px;
+    left:12px;
+}
+#pi{
+    float:left;
+    top:13px;
+    left:13px;
+}
+#varp{
+    float:left;
+    top:21px;
+    left:5px;
+}
+#rho{
+    float:left;
+    top:21px;
+    left:6px;
+}
+#varho{
+    float:left;
+    top:21px;
+    left:7px;
+}
+#sigma{
+    float:left;
+    top:21px;
+    left:8px;
+}
+#varsig{
+    float:left;
+    top:21px;
+    left:9px;
+}
+#tau{
+    float:left;
+    top:21px;
+    left:10px;
+}
+#upsil{
+    float:left;
+    top:21px;
+    left:11px;
+}
+#phi{
+    float:left;
+    top:21px;
+    left:12px;
+}
+#chi{
+    float:left;
+    top:21px;
+    left:13px;
+}
+#psi{
+    float:left;
+    top:29px;
+    left:5px;
+}
+#omeg{
+    float:left;
+    top:29px;
+    left:6px;
+}
+
+#letera{
+    float:left;
+    top:29px;
+    left:7px;    
+}
+
+#leterb{
+    float:left;
+    top:29px;
+    left:8px;    
+}
+#leterc{
+    float:left;
+    top:29px;
+    left:9px;    
+}
+
+#leterd{
+    float:left;
+    top:29px;
+    left:8px;    
+}
+
+#letere{
+    float:left;
+    top:29px;
+    left:9px;    
+}
+
+
+#leterf{
+    float:left;
+    top:37px;
+    left:5px;    
+}
+#leterg{
+    float:left;
+    top:37px;
+    left:6px;    
+}
+#leterh{
+    float:left;
+    top:37px;
+    left:7px;    
+}
+#leteri{
+    float:left;
+    top:37px;
+    left:8px;    
+}
+#leterj{
+    float:left;
+    top:37px;
+    left:9px;    
+}
+#leterk{
+    float:left;
+    top:45px;
+    left:5px;    
+}
+#leterl{
+    float:left;
+    top:45px;
+    left:6px;    
+}
+#leterm{
+    float:left;
+    top:45px;
+    left:7px;    
+}
+#letern{
+    float:left;
+    top:45px;
+    left:8px;    
+}
+#letero{
+    float:left;
+    top:45px;
+    left:9px;    
+}
+#leterp{
+    float:left;
+    top:45px;
+    left:5px;    
+}
+#leterq{
+    float:left;
+    top:45px;
+    left:6px;    
+}
+#leterr{
+    float:left;
+    top:45px;
+    left:7px;    
+}
+#leters{
+    float:left;
+    top:45px;
+    left:8px;    
+}
+#letert{
+    float:left;
+    top:45px;
+    left:9px;    
+}
+#leteru{
+    float:left;
+    top:45px;
+    left:5px;    
+}
+#leterv{
+    float:left;
+    top:45px;
+    left:6px;    
+}
+#leterw{
+    float:left;
+    top:45px;
+    left:7px;    
+}
+#leterx{
+    float:left;
+    top:45px;
+    left:8px;    
+}
+#letery{
+    float:left;
+    top:45px;
+    left:9px;    
+}
+#leterz{
+    float:left;
+    top:45px;
+    left:10px;    
+}
+#CR{
+    float: left;
+    top:45px;
+    left: 11px;
+}
+.Menu_Edt{
+    border-radius: 5px 5px 5px 5px;
+    background: #EEEEEE;
+    text-align:center;
+    width: 250px;
+    height: 535px;
+    margin: 0px 0px 2px 5px;
+    padding: 10px 0px 0px 10px;
+    overflow: auto;
+}
+#MenuEdtAvz{
+    width: 250px;
+    /*height: 470px;*/
+    height: 530px;
+    padding: 2px;
+    position: absolute;
+    overflow: auto;
+}
+#Resultado{
+    /*display: inline-block;*/
+    border: solid 2px #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    background: #FFFFFF;
+    width: 695px;
+    height: 300px;
+    margin: -550px 2px 0px 280px;
+    padding:20px 5px 40px 15px;
+    /*    margin: 2px 2px 0px 380px;
+        padding:20px 5px 40px 15px;*/
+    text-align: justify;
+    overflow-x: hidden;
+    font-size: 20px;
+    word-wrap: break-word;
+    overflow:auto; 
+}
+#Formulas{
+    display: inline-block;
+    border: solid 2px #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    background: #FFFFFF;
+    width: 695px;
+    height: 120px;
+    /*height: 421px;*/
+    margin: 2px 2px 0px 280px;
+    padding:20px 5px 40px 15px;
+    text-align: justify;
+    overflow-x: hidden;   
+}
+#EdtFormulas{
+    margin: 2px auto;
+    width: 680px;
+    height: 70px;
+    resize: none;
+}
+/**Administrador*/
+#Enboltura{
+    border: 2px solid #EEEEEE;
+    width: 900px;
+    height: 500px;
+    margin: 0px 0px 0px 150px;
+}
+#Login{
+    border:  2px solid #EEEEEE;
+    width: 400px;
+    height: 150px;
+    margin: 100px auto;
+    padding-top: 20px;
+}
+#card{
+    float: right;
+    border: 2px solid #006E2E;
+    width: 300px;
+    height: 50px;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+    overflow: hidden;
+}
+.Close:hover{
+    color: #f00;
+}
+#search{
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+#result{
+    border: 2px solid #006E2E;
+    margin: 90px auto;
+    width: 800px;
+    height:350px;
+    overflow: auto;
+}
+#listar{
+    float: left;
+    width: 750px;
+    height: auto;
+    margin: 8px 10px 0px 10px;
+    border: 1px solid #000;
+}
+#listar th{
+    background: #EEEEEE;
+    color: #000;
+}
+#listar td{
+    border: 1px solid #006E2E;
+    background: #FFFFFF;
+}
+#Actualizar{
+    float: left;
+    width: 50px;
+    height: 40px;
+    margin: 6px auto;
+    padding: 2px 2px 2px 2px;
+}
+#Actualizar:hover{
+    cursor: pointer;
+}
+
+#Box {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+.content-popup {
+    margin:0px auto;
+    margin-top:50px;
+    padding:10px;
+    width:400px;
+    min-height:20px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.close {
+    position:relative;
+    left:5px;
+}
+#IdUser,#Idpwd{
+    margin: 0px auto;
+}
+
+/*#DSP{
+    width: 1000px;
+    height: 480px;
+    margin: 4px auto;
+    text-align: left;
+}
+
+#IdNombreUsuario{
+    float: left;
+    margin: 10px;
+}
+#IdBtnBuscaUsr{
+    float: left;
+    margin: 10px;
+    height: 40px;
+}*/

@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Práctica</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+
+            @media (max-width: 980px) {
+                /* Enable use of floated navbar text */
+                .navbar-text.pull-right {
+                    float: none;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        </style>
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+        <link rel="stylesheet" href="css/Estilo.css">
+
+        <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <!--<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+        <script type="text/javascript" src="js/magictouch.js"></script>
+        <script src="js/jquery_Ed.js" type="text/javascript"></script>
+        <script src="js/Escuchador.js" type="text/javascript"></script>
+        <script src="js/Touch.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="nav-collapse collapse">
+                        <p class="navbar-text pull-right">
+                            Área: Matemáticas - Tema: Calculo
+                        </p>
+                        <ul class="nav">
+                            <li><a href="1_Presentacion.html">Presentación</a></li>
+                            <li><a href="1_1_GuiaMaestro.html">Guía Maestro</a></li>
+                            <li><a href="1_2_GuiaAlumno.html">Guía Alumno</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nivel <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <!--                
+                                  <li class="divider"></li>
+                                    <li class="nav-header">Básico</li>
+                                    -->
+                                    <li><a href="2_basico.html">Nivel Básico</a></li>
+                                    <!--
+                                    <li class="nav-header">Intermedio</li>
+                                    -->
+                                    <li><a href="3_intermedio.html">Nivel Intermedio</a></li>
+                                    <!--
+                                    <li class="nav-header">Avanzado</li>
+                                    -->
+                                    <li><a href="4_avanzado.html">Nivel Avanzado</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="5_practica.html">Práctica</a></li>
+                            <!--<li><a href="6_evaluacion.html">Evaluación</a></li>-->
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid"><!--/span-->
+                <div class="span">
+                    <!--<div class="hero-unit">
+                        <h1>Práctica</h1>
+                    </div><!--/row-->
+                    <div class="row-fluid"><!--/span-->
+                        <div class="span4">
+
+                            <nav class="Menu_Edt">
+                                <div id="MenuEdtAvz" class="">
+                                    <div id="fx" class="boton">$f(x)$</div>
+                                    <div id="frac" class="boton">$\frac{a}{b}$</div>
+                                    <div id="raiz" class="boton">$\sqrt{x}$</div>
+                                    <div id="expon" class="boton">$x^y$</div>
+                                    <div id="inte" class="boton">$\int{}$</div>
+                                    <div id="may_iql" class="boton">$\ge$</div>
+                                    <div id="men_iql" class="boton">$\le$</div>
+                                    <div id="men" class="boton"><</div>
+                                    <div id="may" class="boton">></div>
+                                    <div id="div" class="boton">$\div$</div>
+                                    <div id="mult" class="boton">$\times$</div>
+                                    <div id="mas" class="boton">+</div>
+                                    <div id="menos" class="boton">-</div>
+                                    <div id="igual" class="boton">=</div>
+                                    <div id="mas-men" class="boton">$\pm$</div>
+                                    <div id="infinito" class="boton">$\infty$</div>
+                                    <div id="ast" class="boton">$\ast$</div>
+                                    <div id="diag" class="boton">/</div>
+                                    <div id="neq" class="boton">$\neq$</div>
+                                    <div id="prent-izq" class="boton">(</div>
+                                    <div id="prent-der" class="boton">)</div>
+                                    <div id="uno" class="boton">1</div>
+                                    <div id="dos" class="boton">2</div>
+                                    <div id="tres" class="boton">3</div>
+                                    <div id="cuatro" class="boton">4</div>
+                                    <div id="cinco" class="boton">5</div>
+                                    <div id="seis" class="boton">6</div>
+                                    <div id="siete" class="boton">7</div>
+                                    <div id="ocho" class="boton">8</div>
+                                    <div id="nueve" class="boton">9</div>
+                                    <div id="cero" class="boton">0</div>
+                                    <div id="ap" class="boton">$\alpha$</div>
+                                    <div id="bet" class="boton">$\beta$</div>
+                                    <div id="ga" class="boton">$\gamma$</div>
+                                    <div id="del" class="boton">$\delta$</div>
+                                    <div id="ep" class="boton">$\epsilon$</div>
+                                    <div id="var" class="boton">$\varepsilon$</div>
+                                    <div id="ze" class="boton">$\zeta$</div>
+                                    <div id="et" class="boton">$\eta$</div>
+                                    <div id="th" class="boton">$\theta$</div>
+                                    <div id="vart" class="boton">$\vartheta$</div>
+                                    <div id="iot" class="boton">$\iota$</div>
+                                    <div id="kap" class="boton">$\kappa$</div>
+                                    <div id="lam" class="boton">$\lambda$</div>
+                                    <div id="mu" class="boton">$\mu$</div>
+                                    <div id="nu" class="boton">$\nu$</div>
+                                    <div id="xi" class="boton">$\xi$</div>
+                                    <div id="o" class="boton">$o$</div>
+                                    <div id="pi" class="boton">$\pi$</div>
+                                    <div id="varp" class="boton">$\varpi$</div>
+                                    <div id="rho" class="boton">$\rho$</div>
+                                    <div id="varho" class="boton">$\varrho$</div>
+                                    <div id="sigma" class="boton">$\sigma$</div>
+                                    <div id="varsig" class="boton">$\varsigma$</div>
+                                    <div id="tau" class="boton">$\tau$</div>
+                                    <div id="upsil" class="boton">$\upsilon$</div>
+                                    <div id="phi" class="boton">$\phi$</div>
+                                    <div id="chi" class="boton">$\chi$</div>
+                                    <div id="psi" class="boton">$\psi$</div>
+                                    <div id="omeg" class="boton">$\omega$</div>
+                                    <!----------------------------------------->
+                                    <div id="letera" class="boton">a</div>
+                                    <div id="leterb" class="boton">b</div>
+                                    <div id="leterc" class="boton">c</div>
+                                    <div id="leterd" class="boton">d</div>
+                                    <div id="letere" class="boton">e</div>
+                                    <div id="leterf" class="boton">f</div>
+                                    <div id="leterg" class="boton">g</div>
+                                    <div id="leterh" class="boton">h</div>
+                                    <div id="leteri" class="boton">i</div>
+                                    <div id="leterj" class="boton">j</div>
+                                    <div id="leterk" class="boton">k</div>
+                                    <div id="leterl" class="boton">l</div>
+                                    <div id="leterm" class="boton">m</div>
+                                    <div id="letern" class="boton">n</div>
+                                    <div id="letero" class="boton">o</div>
+                                    <div id="leterp" class="boton">p</div>
+                                    <div id="leterq" class="boton">q</div>
+                                    <div id="leterr" class="boton">r</div>
+                                    <div id="leters" class="boton">s</div>
+                                    <div id="letert" class="boton">t</div>
+                                    <div id="leteru" class="boton">u</div>
+                                    <div id="leterv" class="boton">v</div>
+                                    <div id="leterw" class="boton">w</div>
+                                    <div id="leterx" class="boton">x</div>
+                                    <div id="letery" class="boton">y</div>
+                                    <div id="leterz" class="boton">z</div>
+                                    <div id="CR" class="boton">cr</div>
+                                </div>
+                            </nav>
+                            <div id="Box" title="Nombre del Usuario" style="display: none;">
+                                <div class="content-popup">
+                                    <div class="close">X</div>
+                                    <!--<form id="GuardaUser" method="POST" action="">-->
+                                    <input type="text" name="Nombre" placeholder="Escribe tu nombre" autocomplete="off" id="IdNombreUser" class="InputText" required>
+                                    <input type="button" value="listo" class="btn" id="Listo">
+                                    <!--</form>-->
+                                </div>
+
+
+                            </div>
+                            <div id="Resultado" class="" ></div>
+                            <div id="Formulas" class="">
+                                <textarea id="EdtFormulas"></textarea>
+                                <!--<input type="button" value="Inicio" id="IdInicio" class="btn">-->
+                                <input type="button" value="Guardar" id="IdGuardar" class="btn">
+                                <input type="button" value="Borrar" id="IdBorrar" class="btn">
+                            </div>
+                            <object id="tuio" type="application/x-tuio">Plugin TUIO Fallo</object>
+                        </div><!--/span-->
+                        <div class="span4">
+                            <p>&nbsp; </p>
+                        </div>
+                    </div><!--/row-->
+                </div><!--/span-->
+            </div><!--/row-->
+
+            <hr>
+
+            <footer class="footer">
+                <p>&copy; UAEM 2013</p>
+            </footer>
+
+        </div><!--/.fluid-container-->
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap-transition.js"></script>
+        <script src="js/bootstrap-alert.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+        <script src="js/bootstrap-dropdown.js"></script>
+        <script src="js/bootstrap-scrollspy.js"></script>
+        <script src="js/bootstrap-tab.js"></script>
+        <script src="js/bootstrap-tooltip.js"></script>
+        <script src="js/bootstrap-popover.js"></script>
+        <script src="js/bootstrap-button.js"></script>
+        <script src="js/bootstrap-collapse.js"></script>
+        <script src="js/bootstrap-carousel.js"></script>
+        <script src="js/bootstrap-typeahead.js"></script>
+        <script type="text/javascript">
+            swfobject.registerObject("FlashID");
+        </script>
+    </body>
+</html>
